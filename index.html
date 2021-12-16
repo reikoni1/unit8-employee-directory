@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee_Directory</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  
+
+    
+    
+    <div class="full-container">
+        <h1>AWESOME STARTUP EMPLOYEE DIRECTORY</h1>
+        <div class="filter-container">
+            <div class="filter">
+                <select name="country" id="country">
+                    <option value="All">All</option>
+                </select>
+            </div>
+            <div class="SortBy">
+                <select name="sort" id="sort">
+                    <option value="random" hidden>Random</option>
+                    <option value="Age asce">Age ascending</option>
+                    <option value="Age desc">Age descending</option>
+                    <option value="alp asce">Alphabetic ascending</option>
+                    <option value="alp desc">Alphabetic descending</option>
+                </select>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search for an user" class="searchbar">
+            </div>
+        </div>
+        
+        <div class="inputForm">
+            <p>How many users you wanna see?</p>
+            <input type="text" id="textfield" class="text" placeholder="number of users" required>
+            <select name="gender" id="genderSelect" class="text">
+                <option value="All">All</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <button type="button" id="btn">Lets Gooo!!</button>
+        </div>
+        <div class="grid-container">
+            
+        </div>
+    </div>
+
+    <div class="modal"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
